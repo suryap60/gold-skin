@@ -1,6 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 import { ArrowLeft, ArrowRight } from 'lucide-react';
+import { SiGooglegemini } from 'react-icons/si';
 
 export default function Products() {
   const products = [
@@ -49,27 +50,24 @@ export default function Products() {
         }}
       />
 
-      {/* 4-Pointed Star Icon */}
-      <div className="absolute top-[28%] lg:top-[28%] left-[40%] lg:left-[43%] text-[#1c2331] z-10 w-8 h-8 lg:w-10 lg:h-10 hidden md:block">
-        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M12 0L14.5 9.5L24 12L14.5 14.5L12 24L9.5 14.5L0 12L9.5 9.5L12 0Z" fill="currentColor" />
-        </svg>
-      </div>
-
       <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-[108px] relative z-10">
         <div className="flex flex-col lg:flex-row gap-8 lg:gap-12 relative w-full items-start">
 
           {/* Left Text Content */}
-          <div className="w-full lg:absolute lg:top-0 lg:left-0 lg:w-[420px] shrink-0 z-20 pr-0 pt-10 lg:pt-0 pointer-events-none">
-            <div className="pointer-events-auto">
+          <div className="w-full lg:absolute lg:top-0 lg:left-0 lg:w-[800px] shrink-0 z-20 pr-0 pt-10 lg:pt-0 pointer-events-none">
+            <div className="pointer-events-auto flex items-start gap-12 lg:gap-32">
               <h2 className="font-[family-name:var(--font-vidaloka)] text-5xl sm:text-6xl lg:text-[4.5rem] text-[#1c2331] mb-6 leading-[1.05] tracking-tight">
                 Our Best<br />Skin Product
               </h2>
-              <p className="text-[#5a6070] text-base lg:text-[1.05rem] leading-relaxed mb-12 max-w-[340px]">
-                Li Europan lingues es membres del sam familie. Lor separat existentie es un myth. Por scientie, musica, sport etc, litot Europa usa li sam vocabular.
-              </p>
+              <div className="text-[#1A2232] mt-8 shrink-0">
+                <SiGooglegemini className="w-8 h-8 lg:w-10 lg:h-10" />
+              </div>
             </div>
+            <p className="text-[#5a6070] text-base lg:text-[1.05rem] leading-relaxed mb-12 max-w-[340px] pointer-events-auto">
+              Li Europan lingues es membres del sam familie. Lor separat existentie es un myth. Por scientie, musica, sport etc, litot Europa usa li sam vocabular.
+            </p>
           </div>
+
 
           {/* Right Carousel / Grid: Arranged Left Bottom to Right Top smoothly */}
           <div className="w-full flex items-start overflow-x-auto gap-4 lg:gap-8 pb-32 pt-8 lg:pt-0 lg:pb-12 hide-scrollbar relative z-10 px-4 -mx-4 lg:mx-0 lg:px-0">
