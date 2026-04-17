@@ -36,10 +36,10 @@ export default function Features() {
         </div>
 
         {/* Bento/Editorial Grid Layout */}
-        <div className="relative h-[850px] w-full mt-10">
+        <div className="relative w-full mt-10 flex flex-col xl:block xl:h-[850px] gap-8 sm:gap-12 items-center xl:items-start text-center xl:text-left">
 
           {/* 1. Left Arch Image Card */}
-          <div className="absolute top-0 left-0 z-20">
+          <div className="relative xl:absolute xl:top-0 xl:left-0 z-20 flex justify-center w-full xl:w-auto">
             <div className="relative">
               {/* Offset stroke */}
               <div className="absolute -top-4 -right-4 w-[320px] h-[350px] border border-[#1c2331] rounded-t-full z-0">
@@ -59,8 +59,8 @@ export default function Features() {
           </div>
 
           {/* 2. Middle Top Text Block */}
-          <div className="absolute top-[20px] left-[390px] max-w-[340px] z-20">
-            <h3 className="font-[family-name:var(--font-vidaloka)] text-[30px] lg:text-[34px] leading-[1.2] text-[#1c2331] mb-6">
+          <div className="relative xl:absolute xl:top-[20px] xl:left-[390px] max-w-[340px] z-20 mt-6 xl:mt-0 px-4 xl:px-0">
+            <h3 className="font-[family-name:var(--font-vidaloka)] text-[28px] sm:text-[30px] lg:text-[34px] leading-[1.2] text-[#1c2331] mb-4 sm:mb-6">
               The Simplified Skincare Routine Fits Perfectly
             </h3>
             <p className="text-[#5A6070] text-[14px] leading-[1.8] opacity-90 font-medium tracking-tight">
@@ -69,8 +69,8 @@ export default function Features() {
           </div>
 
           {/* 3. Discount Oval Badge with -10deg rotated border */}
-          <div className="absolute top-[-40px] right-[50px] z-20">
-            <div className="relative px-12 py-10 min-w-[300px] h-[160px] flex flex-col items-center justify-center">
+          <div className="relative xl:absolute xl:top-[-40px] xl:right-[50px] z-20 mt-4 xl:mt-0 flex justify-center w-full xl:w-auto">
+            <div className="relative px-8 py-8 sm:px-12 sm:py-10 min-w-[280px] sm:min-w-[300px] h-[140px] sm:h-[160px] flex flex-col items-center justify-center">
               {/* Rotated border ONLY as requested */}
               <div className="absolute inset-0 border border-[#1c2331] rounded-[100%] transform -rotate-[10deg] z-0" />
 
@@ -83,23 +83,23 @@ export default function Features() {
           </div>
 
           {/* 4. Bottom Middle Text */}
-          <div className="absolute bottom-[280px] left-[390px] z-20">
-            <h3 className="font-[family-name:var(--font-vidaloka)] text-[44px] lg:text-[54px] leading-[1.1] text-[#1c2331]">
+          <div className="relative xl:absolute xl:bottom-[280px] xl:left-[390px] z-20 mt-6 xl:mt-0 px-4 xl:px-0">
+            <h3 className="font-[family-name:var(--font-vidaloka)] text-[36px] sm:text-[44px] lg:text-[54px] leading-[1.1] text-[#1c2331]">
               Get to Your Goals,<br />Fast Skincare
             </h3>
           </div>
 
           {/* 5. Large Lower Right Organic Blob Image */}
-          <div className="absolute bottom-[-150px] right-[-50px] z-10">
+          <div className="relative xl:absolute xl:bottom-[-150px] xl:right-[-50px] z-10 mt-12 xl:mt-0 flex justify-center w-full xl:w-auto overflow-hidden sm:overflow-visible">
             <div className="relative">
               {/* Irregular offset organic stroke around shape as requested */}
               <div
-                className="absolute -top-6 -left-6 w-[600px] h-[600px] border border-[#1c2331] z-0"
+                className="absolute -top-4 -left-4 xl:-top-6 xl:-left-6 w-[340px] h-[340px] sm:w-[480px] sm:h-[480px] xl:w-[600px] xl:h-[600px] border border-[#1c2331] z-0"
                 style={{ borderRadius: '54% 46% 48% 52% / 51% 55% 45% 49%' }}
               />
               {/* Main Organic Blob Shape */}
               <div
-                className="w-[600px] h-[600px] bg-[#F3F4F6] overflow-hidden flex items-center justify-center border border-white shadow-2xl relative z-10"
+                className="w-[340px] h-[340px] sm:w-[480px] sm:h-[480px] xl:w-[600px] xl:h-[600px] bg-[#F3F4F6] overflow-hidden flex items-center justify-center border border-white shadow-xl xl:shadow-2xl relative z-10"
                 style={{ borderRadius: '54% 46% 48% 52% / 51% 55% 45% 49%' }}
               >
                 <Image 
@@ -108,14 +108,14 @@ export default function Features() {
                   fill 
                   className="object-cover opacity-90"
                 />
-                <div className="absolute inset-0 opacity-[0.1] bg-[radial-gradient(#1c2331_1px,transparent_1px)] [background-size:24px_24px]" />
-                <SiGooglegemini className="absolute top-[18%] left-[8%] w-10 h-10 text-[#1c2331]" />
+                <div className="absolute inset-0 opacity-[0.1] bg-[radial-gradient(#1c2331_1px,transparent_1px)] bg-[length:14px_14px] xl:bg-[length:24px_24px]" />
+                <SiGooglegemini className="absolute top-[18%] left-[8%] w-8 h-8 xl:w-10 xl:h-10 text-[#1c2331]" />
               </div>
             </div>
           </div>
 
           {/* 6. Isolated Floating Sparkle Bottom Left */}
-          <div className="absolute bottom-[240px] left-[200px] z-30 flex flex-col gap-1">
+          <div className="hidden xl:flex absolute bottom-[240px] left-[200px] z-30 flex-col gap-1">
             <SiGooglegemini className="w-15 h-15 text-[#1c2331]" />
             <SiGooglegemini className="w-5 h-5 text-[#1c2331] ml-10 mt-[-18px]" />
           </div>
