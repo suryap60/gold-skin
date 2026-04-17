@@ -1,11 +1,6 @@
 import React from 'react';
+import { StarBg } from '../ui/buttons/StarBg';
 
-// Custom perfectly contoured 4-point Organic Star SVG matching the Figma aesthetic shape
-const StarBg = ({ className, fill }: { className?: string; fill: string }) => (
-  <svg viewBox="0 0 100 100" className={className}>
-    <path d="M50 0 Q50 50 100 50 Q50 50 50 100 Q50 50 0 50 Q50 50 50 0 Z" fill={fill} />
-  </svg>
-);
 
 // High-end minimalist line-art for Facial Wash
 const FacialWashIcon = () => (
@@ -61,30 +56,29 @@ export default function Services() {
 
   return (
     <section className="relative w-full py-[120px] bg-[#FA9E9E] overflow-hidden">
-      
+
       {/* Absolute Background Shape Elements spanning effectively behind layout bounds */}
       <div className="absolute inset-0 w-full h-full flex justify-center z-0 pointer-events-none overflow-visible">
         {/* Center Top Big Star (Very light coral / white overlay) */}
-        <StarBg 
-          className="absolute top-[30px] w-[600px] h-[600px]" 
-          fill="rgba(255, 255, 255, 0.25)" 
-        />
-        {/* Left partial Star */}
-        <StarBg 
-          className="absolute top-[350px] left-[-150px] w-[500px] h-[500px]" 
-          fill="rgba(255, 255, 255, 0.2)" 
+        <StarBg
+          className="absolute top-[-55px] left-[405px] w-[300px] h-[600px]"
+          fill="rgba(255, 255, 255, 0.25)"
         />
         {/* Bottom Right purple star */}
-        <StarBg 
-          className="absolute bottom-[-100px] right-[-100px] w-[450px] h-[450px]" 
-          fill="rgba(162, 145, 226, 0.4)" 
+        <StarBg
+          className="absolute bottom-[-100px] right-[0px] w-[350px] h-[450px]"
+          fill="rgba(162, 145, 226, 0.4)"
         />
+        {/* <StarBg
+          className="absolute top-[350px] left-[-150px] w-[500px] h-[500px]"
+          fill="rgba(255, 255, 255, 0.2)"
+        /> */}
       </div>
 
       <div className="relative z-10 max-w-[1440px] mx-auto px-4 md:px-[60px] lg:px-[108px] flex flex-col items-center">
-        
+
         {/* Section Title */}
-        <h2 
+        <h2
           className="text-[64px] leading-[1.1] text-[#1A2232] tracking-tight m-0 z-20 mb-[60px]"
           style={{ fontFamily: 'var(--font-vidaloka)' }}
         >
@@ -96,21 +90,21 @@ export default function Services() {
           {services.map((service, index) => {
             const Icon = service.icon;
             return (
-              <div 
-                key={index} 
+              <div
+                key={index}
                 className="flex-1 w-full lg:max-w-[380px] bg-[#F6F2EB] rounded-[16px] px-[24px] py-[44px] flex flex-col items-center shadow-[0_10px_40px_rgba(0,0,0,0.06)] relative z-20 transition-transform duration-300 hover:scale-[1.02]"
               >
                 <div className="w-[84px] h-[84px] bg-[#806CCB] rounded-full flex items-center justify-center mb-[28px]">
                   <Icon />
                 </div>
-                
-                <h3 
+
+                <h3
                   className="text-[28px] text-[#1A2232] tracking-wide mb-[16px]"
                   style={{ fontFamily: 'var(--font-vidaloka)' }}
                 >
                   {service.title}
                 </h3>
-                
+
                 {/* Specific centralized hard-coded layout body block matched directly to the UI image details */}
                 <p className="font-sans text-[13px] text-[#1A2232]/80 leading-[1.8] font-medium text-center">
                   Li Europan lingues es membres del sam<br />
