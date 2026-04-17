@@ -33,7 +33,7 @@ export default function Testimonials() {
   ];
 
   return (
-    <section className="py-24 lg:py-32 bg-[#F6F4F0] relative overflow-hidden w-full">
+    <section className="py-24 lg:py-32 bg-[#F6F2EB] relative overflow-hidden w-full">
       {/* Background Gradients/Blobs as seen in reference */}
       <div 
         className="absolute w-[300px] h-[300px] top-[10%] right-[-5%] bg-[#FFC6C6] blur-[100px] opacity-40 rounded-full pointer-events-none z-0"

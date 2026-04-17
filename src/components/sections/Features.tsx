@@ -6,7 +6,7 @@ import { StarBg } from '../ui/buttons/StarBg';
 
 export default function Features() {
   return (
-    <section className="relative w-full min-h-[1100px] bg-[#F6F4F0] overflow-hidden py-32 pb-64">
+    <section className="relative w-full min-h-[1100px] bg-[#F6F2EB] overflow-hidden py-32 pb-64">
 
       <div className="absolute inset-0 w-full h-full flex justify-center z-0 pointer-events-none overflow-visible">
         <StarBg
@@ -47,10 +47,13 @@ export default function Features() {
               </div>
               {/* Main Card */}
               <div className="relative w-[320px] h-[350px] bg-[#F3F4F6] rounded-t-full overflow-hidden flex items-center justify-center border border-white z-10 shadow-sm">
+                <Image 
+                  src="/images/placeholder.jpg" 
+                  alt="Feature Skincare" 
+                  fill 
+                  className="object-cover opacity-90"
+                />
                 <div className="absolute inset-0 opacity-[0.1] bg-[radial-gradient(#1c2331_1px,transparent_1px)] [background-size:20px_20px]" />
-                <span className="text-[10px] font-bold text-[#1c2331] opacity-20 text-center leading-loose p-4 uppercase tracking-[0.2em]">
-                  Image Placeholder Image Placeholder Image Placeholder
-                </span>
               </div>
             </div>
           </div>
@@ -99,10 +102,14 @@ export default function Features() {
                 className="w-[600px] h-[600px] bg-[#F3F4F6] overflow-hidden flex items-center justify-center border border-white shadow-2xl relative z-10"
                 style={{ borderRadius: '54% 46% 48% 52% / 51% 55% 45% 49%' }}
               >
+                <Image 
+                  src="/images/placeholder.jpg" 
+                  alt="Skincare Product Display" 
+                  fill 
+                  className="object-cover opacity-90"
+                />
                 <div className="absolute inset-0 opacity-[0.1] bg-[radial-gradient(#1c2331_1px,transparent_1px)] [background-size:24px_24px]" />
-                <span className="text-[12px] font-bold text-[#1c2331] opacity-20 text-center leading-loose p-8 uppercase tracking-[0.3em]">
-                  Image Placeholder Image Placeholder Image Placeholder Image Placeholder
-                </span>
+                <SiGooglegemini className="absolute top-[18%] left-[8%] w-10 h-10 text-[#1c2331]" />
               </div>
             </div>
           </div>

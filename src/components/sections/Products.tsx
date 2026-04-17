@@ -32,7 +32,7 @@ export default function Products() {
   ];
 
   return (
-    <section className="py-24 lg:py-32 bg-[#F6F4F0] relative overflow-hidden w-full">
+    <section className="py-24 lg:py-32 bg-[#F6F2EB] relative overflow-hidden w-full">
       {/* Exact Right Top Gradient Block requested by User */}
       <div
         style={{
@@ -40,7 +40,7 @@ export default function Products() {
           width: '223px',
           height: '223px',
           top: '88px',
-          left: '1257px',
+          right: '0px',
           opacity: 1,
           background: '#FFC6C6',
           backdropFilter: 'blur(256px)',
@@ -69,20 +69,19 @@ export default function Products() {
           </div>
 
 
-          {/* Right Carousel / Grid: Arranged Left Bottom to Right Top smoothly */}
-          <div className="w-full flex items-start overflow-x-auto gap-4 lg:gap-8 pb-32 pt-8 lg:pt-0 lg:pb-12 hide-scrollbar relative z-10 px-4 -mx-4 lg:mx-0 lg:px-0">
+          {/* Products Grid - Replaced scroller with proper static layout */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8 pb-12 pt-8 lg:pt-0 relative z-10 w-full">
             {products.map((product, index) => {
-              // Map indexes directly to responsive Tailwind classes for SSR-safe staircase effect
-              // Product 0 (Sunscreen) starts furthest left at the bottom. The items climb upwards to Top Right.
-              const staggerClass = index === 0 ? 'mt-0 lg:mt-[360px]'
-                : index === 1 ? 'mt-0 lg:mt-[240px]'
-                  : index === 2 ? 'mt-0 lg:mt-[120px]'
-                    : 'mt-0 lg:mt-0';
+              // Preserving the signature staircase effect for the diagonal layout style
+              const staggerClass = index === 0 ? 'lg:mt-[360px]'
+                : index === 1 ? 'lg:mt-[240px]'
+                  : index === 2 ? 'lg:mt-[120px]'
+                    : 'lg:mt-0';
 
               return (
                 <div
                   key={product.id}
-                  className={`flex-none w-[240px] lg:w-[280px] flex flex-col transition-all duration-300 ${staggerClass}`}
+                  className={`flex flex-col transition-all duration-300 w-full ${staggerClass}`}
                 >
                   <div className="relative h-[320px] lg:h-[350px] w-full rounded-t-[1000px] rounded-b-[24px] overflow-hidden mb-5 bg-[#F8F8F8]">
                     <Image
@@ -133,3 +132,4 @@ export default function Products() {
     </section>
   );
 }
+
