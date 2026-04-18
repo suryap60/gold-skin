@@ -27,7 +27,7 @@ export default function Products() {
       id: 4,
       name: "Moisturizers",
       price: "$15.00",
-      image: "https://images.unsplash.com/photo-1615397323287-3d12d46e3f3b?auto=format&fit=crop&w=600&q=80",
+      image: "https://images.unsplash.com/photo-1556228578-0d85b1a4d571?auto=format&fit=crop&w=600&q=80",
     }
   ];
 
@@ -70,7 +70,7 @@ export default function Products() {
 
 
           {/* Products Container - Swipeable Scroll on Mobile/Tablet, Static Diagonal Grid on Desktop */}
-          <div 
+          <div
             className="flex overflow-x-auto snap-x snap-mandatory gap-6 xl:grid xl:grid-cols-4 xl:gap-8 pb-12 pt-8 xl:pt-0 relative z-10 w-full"
             style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
           >

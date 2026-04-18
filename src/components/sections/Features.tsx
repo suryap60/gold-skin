@@ -6,7 +6,7 @@ import { StarBg } from '../ui/buttons/StarBg';
 
 export default function Features() {
   return (
-    <section className="relative w-full min-h-[1100px] bg-[#F6F2EB] overflow-hidden py-32 pb-64">
+    <section id="about" className="relative w-full min-h-[1100px] bg-[#F6F2EB] overflow-hidden py-32 pb-64">
 
       <div className="absolute inset-0 w-full h-full flex justify-center z-0 pointer-events-none overflow-visible">
         <StarBg
@@ -36,7 +36,7 @@ export default function Features() {
         </div>
 
         {/* Bento/Editorial Grid Layout */}
-        <div className="relative w-full mt-10 flex flex-col xl:block xl:h-[850px] gap-8 sm:gap-12 items-center xl:items-start text-center xl:text-left">
+        <div className="relative w-full mt-10 flex flex-col xl:block xl:h-[810px] gap-8 sm:gap-12 items-center xl:items-start text-center xl:text-left">
 
           {/* 1. Left Arch Image Card */}
           <div className="relative xl:absolute xl:top-0 xl:left-0 z-20 flex justify-center w-full xl:w-auto">
@@ -46,11 +46,11 @@ export default function Features() {
                 <SiGooglegemini className="absolute -top-3 -right-3 w-8 h-8 text-[#1c2331] z-30" />
               </div>
               {/* Main Card */}
-              <div className="relative w-[320px] h-[350px] bg-[#F3F4F6] rounded-t-full overflow-hidden flex items-center justify-center border border-white z-10 shadow-sm">
-                <Image 
-                  src="/images/placeholder.jpg" 
-                  alt="Feature Skincare" 
-                  fill 
+              <div className="relative w-[320px] h-[320px] bg-[#F3F4F6] rounded-t-full overflow-hidden flex items-center justify-center border border-white z-10 shadow-sm">
+                <Image
+                  src="/images/placeholder.jpg"
+                  alt="Feature Skincare"
+                  fill
                   className="object-cover opacity-90"
                 />
                 <div className="absolute inset-0 opacity-[0.1] bg-[radial-gradient(#1c2331_1px,transparent_1px)] [background-size:20px_20px]" />
@@ -99,13 +99,13 @@ export default function Features() {
               />
               {/* Main Organic Blob Shape */}
               <div
-                className="w-[340px] h-[340px] sm:w-[480px] sm:h-[480px] xl:w-[600px] xl:h-[600px] bg-[#F3F4F6] overflow-hidden flex items-center justify-center border border-white shadow-xl xl:shadow-2xl relative z-10"
+                className="w-[340px] h-[340px] sm:w-[480px] sm:h-[480px] xl:w-[550px] xl:h-[550px] bg-[#F3F4F6] overflow-hidden flex items-center justify-center border border-white shadow-xl xl:shadow-2xl relative z-10"
                 style={{ borderRadius: '54% 46% 48% 52% / 51% 55% 45% 49%' }}
               >
-                <Image 
-                  src="/images/placeholder.jpg" 
-                  alt="Skincare Product Display" 
-                  fill 
+                <Image
+                  src="/images/placeholder.jpg"
+                  alt="Skincare Product Display"
+                  fill
                   className="object-cover opacity-90"
                 />
                 <div className="absolute inset-0 opacity-[0.1] bg-[radial-gradient(#1c2331_1px,transparent_1px)] bg-[length:14px_14px] xl:bg-[length:24px_24px]" />

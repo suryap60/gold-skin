@@ -4,7 +4,7 @@ import React from 'react';
 
 export default function Newsletter() {
   return (
-    <section className="bg-[#FC9B9B] py-24 lg:py-32 px-4 relative overflow-hidden">
+    <section id="contact" className="bg-[#FC9B9B] py-24 lg:py-32 px-4 relative overflow-hidden">
       <div className="max-w-[1440px] mx-auto text-center relative z-10">
 
         {/* Title */}

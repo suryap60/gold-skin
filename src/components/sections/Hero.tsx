@@ -32,11 +32,6 @@ export default function Hero() {
           <StarBg fill="#A291E2" className="w-full h-full" />
         </div>
 
-        {/* Radial Blur Blobs */}
-        <div className="absolute top-[5%] left-[30%] w-[500px] h-[500px] bg-[#A291E2] mix-blend-multiply filter blur-[150px] opacity-[0.14]" />
-        <div className="absolute bottom-[20%] left-[45%] w-[550px] h-[550px] bg-[#FFC6C6] mix-blend-multiply filter blur-[150px] opacity-[0.25]" />
-        <div className="absolute top-[35%] right-[10%] w-[450px] h-[450px] bg-[#F48B8B] mix-blend-multiply filter blur-[140px] opacity-[0.12]" />
-
       </div>
 
       <div className="max-w-[1440px] mx-auto px-6 sm:px-8 xl:px-[108px] relative z-10">
@@ -57,8 +52,8 @@ export default function Hero() {
 
               {/* Arch Container with offset stroke */}
               <div className="relative inline-block mt-4 xl:mt-0">
-                <div className="absolute -top-2 -right-2 xl:-top-3 xl:-right-3 w-[260px] h-[262px] md:w-[320px] md:h-[322px] xl:w-[300px] xl:h-[302px] border border-[#1c2331] border-b-0 rounded-t-[150px] transition-transform duration-500 z-0" />
-                <div className="relative w-[260px] h-[250px] md:w-[320px] md:h-[310px] xl:w-[300px] xl:h-[290px] bg-[#F4F5F8] rounded-t-[150px] overflow-hidden flex items-center justify-center border border-white z-10 shadow-sm">
+                <div className="absolute -top-2 -right-2 xl:-top-3 xl:-right-3 w-[260px] h-[262px] md:w-[320px] md:h-[322px] xl:w-[300px] xl:h-[302px] border border-[#1c2331] rounded-t-[150px]  transition-transform duration-500 z-0" />
+                <div className="relative w-[260px] h-[240px] md:w-[320px] md:h-290px] xl:w-[300px] xl:h-[280px] bg-[#F4F5F8] rounded-t-[150px] overflow-hidden flex items-center justify-center border border-white z-10 shadow-sm">
                   <Image
                     src="/images/placeholder.jpg"
                     alt="Hero Product"
@@ -90,7 +85,7 @@ export default function Hero() {
                 {[1, 2, 3, 4, 5].map(i => <Star key={i} size={15} fill="currentColor" strokeWidth={0} />)}
               </div>
 
-              <p className="text-[#5A6070] text-[13px] md:text-[15px] xl:text-[13px] leading-relaxed max-w-[280px] md:max-w-[400px] xl:max-w-[280px] opacity-80 mb-8 xl:mb-0">
+              <p className="text-[#5A6070] text-[13px] md:text-[16px] xl:text-[16px] leading-relaxed max-w-[280px] md:max-w-[400px] xl:max-w-[280px] opacity-80 mb-8 xl:mb-0">
                 Li Europan lingues es membres del sam familie. Lor separat existentie es un myth. Por scientie, musica, sport etc.
               </p>
             </div>
@@ -101,7 +96,7 @@ export default function Hero() {
                 {/* Rotating Ellipse Border Only */}
                 <div className="absolute inset-0 border border-[#1c2331] rounded-[100%] transform -rotate-[12deg] transition-transform duration-500 ease-in-out group-hover:rotate-0" />
                 {/* Fixed Text */}
-                <span className="font-[family-name:var(--font-vidaloka)] text-xl xl:text-2xl font-bold text-[#1c2331] tracking-wider relative z-10 block mt-[2px]">Shop Now</span>
+                <span className="font-[family-name:var(--font-vidaloka)] text-xl md:text-[25px] font-bold text-[#1c2331] tracking-wider relative z-10 block mt-[2px]">Shop Now</span>
               </div>
             </div>
           </div>

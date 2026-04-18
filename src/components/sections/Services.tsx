@@ -55,7 +55,7 @@ export default function Services() {
   ];
 
   return (
-    <section className="relative w-full py-[120px] bg-[#FA9E9E] overflow-hidden">
+    <section id="services" className="relative w-full py-[120px] bg-[#FA9E9E] overflow-hidden">
 
       {/* Absolute Background Shape Elements spanning effectively behind layout bounds */}
       <div className="absolute inset-0 w-full h-full flex justify-center z-0 pointer-events-none overflow-visible">
