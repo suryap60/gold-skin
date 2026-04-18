@@ -44,8 +44,7 @@ export default function Products() {
           opacity: 1,
           background: '#FFC6C6',
           backdropFilter: 'blur(256px)',
-          filter: 'blur(100px)', /* adding normal filter blur as fallback so the color edges remain soft */
-          pointerEvents: 'none',
+          filter: 'blur(100px)',
           zIndex: 0
         }}
       />

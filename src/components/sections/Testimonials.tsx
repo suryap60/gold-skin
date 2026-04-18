@@ -60,10 +60,9 @@ export default function Testimonials() {
     return () => window.removeEventListener('resize', handleResize);
   }, []);
 
-  const totalDots = 3; // Fixed to 3 dots as requested
+  const totalDots = 3;
 
 
-  // Ensure activeIndex is valid on resize boundaries
   useEffect(() => {
     if (activeIndex >= totalDots) {
       setActiveIndex(Math.max(0, totalDots - 1));
